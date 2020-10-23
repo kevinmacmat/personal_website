@@ -112,10 +112,11 @@ nav {
 .info-wrapper {
   flex-wrap: wrap;
   flex-direction: row;
-  background-image: url(images/profile_pic.jpeg);
+  background-image: url(images/profile_pic_update.jpeg);
   background-color: red;
-  height: 1000px;
+  height: 800px;
   background-size: cover;
+  background-position: bottom;
 }
 
 .info {

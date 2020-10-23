@@ -77,8 +77,8 @@ nav {
 
 /* WRAPPER FOR THE CONTENT OF THE BODY INCLUDING THE BANNER */
 .wrapper {
-  margin-left: 50px;
-  margin-right: 50px;
+ /*margin-left: 50px;
+  margin-right: 50px;*/
 }
 /* BANNER */
 .banner {
@@ -112,14 +112,18 @@ nav {
 .info-wrapper {
   flex-wrap: wrap;
   flex-direction: row;
+  background-image: url(images/profile_pic.jpeg);
+  background-color: red;
+  height: 1000px;
+  background-size: cover;
 }
 
 .info {
   display: flex;
   display: inline-block;
-  background-color: white;
   /*width: 100%;*/
   padding: 20px;
+  /*background-image: url(images/profile_pic.jpeg);*/
 }
 
 #github-icon {
@@ -167,64 +171,98 @@ nav {
   word-wrap: break-word;
 }
 
-/* EDUCATION SECTION */
-.education-wrapper {
-  display: flex;
+
+/* PROJECT SUMMARY #1 */
+.project-examples-header {
+  text-align: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-bottom: 5%;
+  color: rgba(60, 100, 68, .9);
 }
 
-#grad-hat {
-  display:flex;
-  height: 200px;
-  float: left;
-}
-
-.education1 {
-  display: flex;
-  /*background-color: rgba(21, 233, 144, 0.31);*/
-  padding: 20px;
+.project-wrapper {
+  /*text-align: right;*/
+  /*width: 100%;*/
+  display: inline-flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: 100%;
+  background-color: rgba(253, 220, 103, 0.05);
 }
 
-.education2 {
-  display: flex;
-  background-color: rgba(0, 163, 255, 0.51);
-  padding: 20px;
+.project-wrapper-2 {
+  /*text-align: right;*/
+  /*width: 100%;*/
+  display: inline-flex;
+  padding-top: 5%;
   width: 100%;
+  background-color: rgba(253, 220, 103, 0.05);
 }
 
-.education2-text {
-  display: flex;
-  background-color: rgba(0, 163, 255, 0.11);
-  padding: 20px;
-  width: 100%;
+.project-wrapper p {
+  font-family: arial;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  color: black;
 }
 
-.education3 {
-  display: flex;
-  background-color: rgba(162, 99, 71, 0.5);
-  padding: 20px;
-  width: 100%;
+.project-wrapper-2 p {
+  font-family: arial;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  color: black;
 }
 
-.education3-text {
-  display: flex;
-  background-color: rgba(162, 99, 71, 0.11);
-  padding: 20px;
-  width: 100%;
+.project-1-summary {
+  /*text-align: left;*/
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  width: 40%;
+  height: 100%
+  background-color: rgba(114, 140, 136, 0.12);
 }
 
-.education4 {
-  display: flex;
-  background-color: rgba(60, 100, 68, .5);
-  padding: 20px;
-  width: 100%;
+.project-2-summary {
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-right: 2%;
+  width: 40%;
+  height: 90%
+  background-color: red;
 }
 
-.education4-text {
-  display: flex;
-  background-color: rgba(60, 100, 68, .1);
-  padding: 20px;
+.separating-line {
+  border-left: 6px solid green;
+  height: 300px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.iframe-wrapper-1 {
+  display: inline-flex;
+  text-align: center;
+  width: 50%;
+}
+
+.iframe-wrapper-2 {
+  display: inline-flex;
+  text-align: center;
+  width: 60%;
+}
+
+.iframe-1 {
   width: 100%;
+  height: 100%;
+  padding-left: 2%;
+}
+
+.iframe-2 {
+  width: 100%;
+  height: 100%;
+  padding-left: 2%;
 }
 
 /* FOOTER */

@@ -80,7 +80,7 @@ nav {
  /*margin-left: 50px;
   margin-right: 50px;*/
 }
-/* BANNER */
+/* BANNER 
 .banner {
   font-family: arial;
   letter-spacing: 5px;
@@ -91,19 +91,22 @@ nav {
   height: 250px;
   background-size: cover;
 }
+*/
 
-.banner h1 {
-  font-size: 3vh;
+.info-title {
+  font-size: 5vh;
   font-weight: bolder;
   align-items: flex-start;
-  margin-top: 50px;
-  margin-left: 10px;
+  padding-top: 5%;
+  padding-left: 5%;
   color: white;
 }
 
 .subheading {
   justify-content: center;
-  margin-top: 175px;
+  padding-top: 5%;
+  padding-right: 5%;
+  text-align: right;
   font-weight: bolder;
   color: white;
 }
@@ -113,7 +116,6 @@ nav {
   flex-wrap: wrap;
   flex-direction: row;
   background-image: url(images/profile_pic_update.jpeg);
-  background-color: red;
   height: 800px;
   background-size: cover;
   background-position: bottom;
@@ -123,8 +125,13 @@ nav {
   display: flex;
   display: inline-block;
   /*width: 100%;*/
-  padding: 20px;
+  padding-left: 5%;
+  padding-right: 65%;
   /*background-image: url(images/profile_pic.jpeg);*/
+}
+
+.about-me-text {
+  text-overflow: clip;
 }
 
 #github-icon {
@@ -189,7 +196,7 @@ nav {
   padding-top: 5%;
   padding-bottom: 5%;
   width: 100%;
-  background-color: rgba(253, 220, 103, 0.05);
+  background-color: rgba(235, 218, 213, .2);
 }
 
 .project-wrapper-2 {
@@ -198,7 +205,7 @@ nav {
   display: inline-flex;
   padding-top: 5%;
   width: 100%;
-  background-color: rgba(253, 220, 103, 0.05);
+  background-color: rgba(235, 218, 213, .2);
 }
 
 .project-wrapper p {
@@ -213,6 +220,7 @@ nav {
   font-size: 20px;
   /*font-weight: bold;*/
   color: black;
+  width: 100%;
 }
 
 .project-1-summary {
@@ -220,7 +228,7 @@ nav {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
-  width: 40%;
+  width: 100%;
   height: 100%
   background-color: rgba(114, 140, 136, 0.12);
 }
@@ -228,7 +236,7 @@ nav {
 .project-2-summary {
   padding-left: 5%;
   padding-top: 2%;
-  padding-right: 2%;
+  padding-right: 5%;
   width: 40%;
   height: 90%
   background-color: red;
@@ -245,19 +253,21 @@ nav {
 .iframe-wrapper-1 {
   display: inline-flex;
   text-align: center;
-  width: 50%;
+  width: 170%;
+  padding-right: 5%;
 }
 
 .iframe-wrapper-2 {
   display: inline-flex;
   text-align: center;
-  width: 60%;
+  width: 170%;
+  padding-left: 5%;
 }
 
 .iframe-1 {
   width: 100%;
   height: 100%;
-  padding-left: 2%;
+  padding-left: 5%;
 }
 
 .iframe-2 {

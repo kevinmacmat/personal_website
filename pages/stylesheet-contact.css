@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: arial;
+}
+
+h1, h2, h3 {
+  font-family: arial;
+}
+
+/* NAVIGATION BAR */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(32, 32, 32, 0.05);
+}
+
+.logo {
+  font-family: arial;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 30px;
+  border: 5px solid black;
+}
+
+.logo h3 {
+  padding-left: 3px;
+}
+
+.navlinks {
+  display: flex;
+  width: 60%;
+  background-color: ;
+  text-transform: uppercase;
+  font-family: arial;
+  justify-content: space-around;
+}
+
+.navlinks a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 2px;
+  border: ;
+}
+
+.navlinks a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+/* BURGER DROPDOWN MENU FOR MOBILE */
+.burger div {
+  width: 25px;
+  height: 5px;
+  margin: 7px;
+  background-color: black;
+  display: none;
+  cursor: pointer;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+#github-icon {
+  height: 35px; 
+  width: 35px;
+}
+
+#linkedin-icon {
+  height: 35px; 
+  width: 35px;
+}
+
+#medium-icon {
+  height: 35px; 
+  width: 35px;
+}
+
+.icons {
+  width: 100%;
+}
+
+
+.resume-iframe {
+  width: 100%;
+  height: 1400px;
+}
+
+.contact-info {
+  margin: 100px 100px 100px 100px;
+  text-align: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  /*color: rgba(60, 100, 68, .9);*/
+  color: black;
+}
+
+.contact-pic {
+  background-image: url("../images/10.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+
+/* TABLETS AND MOBILE SCREENS */
+@media screen and (max-width: 1024px) {
+  .navlinks {
+    width: 60%;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(32, 32, 32, 0.85);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateX(100%); */
+    /* transition: transform 0.5s ease-in; /* Pushes the navbar into the vw */
+
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .burger div {
+    display: block;
+  }
+
+  .navactive { /* When burger clicked nav bar is moved into the screen */
+    display: flex;
+    background-color: white;
+    /* transform: translateX(0%); */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: ;
+    overflow-x: hidden;
+  }
+
+  .burger div {
+    display: block;
+  }
+
+  .navlinks {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(32, 32, 32, 0.85);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateX(100%); */
+    /* transition: transform 0.5s ease-in; /* Pushes the navbar into the vw */
+
+    }
+
+    .navactive { /* When burger clicked nav bar is moved into the screen */
+      display: flex;
+      background-color: white;
+    }
+}

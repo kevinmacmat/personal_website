@@ -130,6 +130,35 @@ nav {
 
 /* TABLETS AND MOBILE SCREENS */
 @media screen and (max-width: 1024px) {
+    :root {
+    /*--primary-color: rgba(13,110,139,0.2);*/
+    --primary-color: rgba(193,66,66,0.2);
+    /*--overlay-color: rgba(24,39,51,0.85);*/
+    --overlay-color: rgba(193,66,66,0.4);
+    --menu-speed: 0.75s;
+  }
+
+/* MOVE ABOUT ME SECTION BELOW PROFILE PIC */
+.about-me-title {
+  visibility: hidden;
+}
+
+.about-me-text {
+  visibility: hidden;
+}
+
+.about-me-ss {
+  visibility: visible;
+  padding: 5% 5% 0% 5%;
+}
+
+.about-me-text-ss {
+  visibility: visible;
+  font-weight: bold;
+  padding:  5% 5% 0% 5%;
+}
+
+
   .navlinks {
     width: 60%;
     position: absolute;
@@ -149,43 +178,147 @@ nav {
     overflow-x: hidden;
   }
 
-  .burger div {
-    display: block;
-  }
-
-  .navactive { /* When burger clicked nav bar is moved into the screen */
+  .menu-wrap {
     display: flex;
-    background-color: white;
-    /* transform: translateX(0%); */
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    display: ;
-    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(32, 32, 32, 0);
   }
 
-  .burger div {
-    display: block;
-  }
-
-  .navlinks {
+  .menu-wrap .toggler {
     position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: rgba(32, 32, 32, 0.85);
-    display: none;
-    flex-direction: column;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  .menu-wrap .hamburger {
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
     align-items: center;
-    /* transform: translateX(100%); */
-    /* transition: transform 0.5s ease-in; /* Pushes the navbar into the vw */
+    justify-content: center;
+  }
 
-    }
+  /* HAMBURGER LINE */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
 
-    .navactive { /* When burger clicked nav bar is moved into the screen */
-      display: flex;
-      background-color: white;
-    }
-}
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  /* MOVES LINE DOWN ADDING A THIRD */  
+  .menu-wrap .hamburger > div:after {
+    top: 10px;
+  }
+
+  /* TOGGLER ANIMATE */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+
+  /* TURN LINES INTO X */
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  /* ROTATE ON HOVER WHEN CHECKED */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  /* SHOW MENU */
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4 ease;
+  }
+
+  .menu-wrap .menu > div > div > ul > li {
+    font-family: arial;
+    font-weight: bold;
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+
+

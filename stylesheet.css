@@ -291,26 +291,6 @@ nav {
   }
 
 /* MOVE ABOUT ME SECTION BELOW PROFILE PIC */
-.about-me-title {
-  visibility: hidden;
-}
-
-.about-me-text {
-  visibility: hidden;
-}
-
-.about-me-ss {
-  visibility: visible;
-  padding: 5% 5% 0% 5%;
-}
-
-.about-me-text-ss {
-  visibility: visible;
-  font-weight: bold;
-  padding:  5% 5% 0% 5%;
-}
-
-
   .navlinks {
     width: 60%;
     position: absolute;

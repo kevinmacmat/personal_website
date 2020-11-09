@@ -236,9 +236,8 @@ nav {
 
 .iframe-wrapper-1 {
   display: inline-flex;
-  text-align: center;
-  width: 170%;
-  padding-right: 5%;
+  max-width: 1000px;
+  max-height: 100%;
 }
 
 .iframe-wrapper-2 {
@@ -249,9 +248,8 @@ nav {
 }
 
 .iframe-1 {
-  width: 100%;
-  height: 100%;
-  padding-left: 5%;
+  max-height:100%;
+  max-width: 100%
 }
 
 .iframe-2 {

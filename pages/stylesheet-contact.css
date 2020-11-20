@@ -119,6 +119,10 @@ nav {
   position: fixed;
 }
 
+.menu-wrap {
+  visibility: hidden;
+}
+
 
 /* TABLETS AND MOBILE SCREENS */
 @media screen and (max-width: 1024px) {
@@ -172,6 +176,7 @@ nav {
 
   .menu-wrap {
     display: flex;
+    visibility: visible;
     position: fixed;
     top: 0;
     right: 0;

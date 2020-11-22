@@ -21,6 +21,7 @@ nav {
   background-color: rgba(32, 32, 32, 0.05);
 }
 
+/* LOGO IN NAV BAR */
 .logo {
   font-family: arial;
   text-transform: uppercase;
@@ -34,6 +35,7 @@ nav {
   padding-left: 3px;
 }
 
+/* NAV BAR LINKS */
 .navlinks {
   display: flex;
   width: 60%;
@@ -61,16 +63,6 @@ nav {
   list-style: none;
 }
 
-/* BURGER DROPDOWN MENU FOR MOBILE */
-.burger div {
-  width: 25px;
-  height: 5px;
-  margin: 7px;
-  background-color: black;
-  display: none;
-  cursor: pointer;
-}
-
 .navlinks li {
   list-style: none;
 }
@@ -94,17 +86,19 @@ nav {
   width: 100%;
 }
 
-
+/* RESUME PDF */
 .resume-iframe {
   width: 100%;
   height: 1400px;
 }
 
+/* HIDE BURGER FOR SMALL SCREENS */
 .menu-wrap {
   visibility: hidden;
 }
 
-/* TABLETS AND MOBILE SCREENS */
+/* -----SMALL SCREENS-------------*/
+
 @media screen and (max-width: 1024px) {
     :root {
     /*--primary-color: rgba(13,110,139,0.2);*/
@@ -145,9 +139,6 @@ nav {
     display: none;
     flex-direction: column;
     align-items: center;
-    /* transform: translateX(100%); */
-    /* transition: transform 0.5s ease-in; /* Pushes the navbar into the vw */
-
   }
 
   body {
